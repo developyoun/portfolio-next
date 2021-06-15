@@ -40,7 +40,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   font-size: 2rem;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   background-color: #222;
   z-index: 1;
 `;
@@ -56,7 +56,7 @@ const Div = styled.div`
   };
   svg{
     padding-left: 2rem;
-    font-size: 2.6rem;
+    font-size: 3.4rem;
     color :rgb(176, 190, 197);
     :hover{
       cursor: pointer;

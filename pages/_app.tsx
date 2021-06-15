@@ -1,13 +1,34 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import Header from '../components/Header'
+import type { AppProps } from "next/app";
+import Header from "../components/Header";
+
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
+  body{
+    padding: 0;
+    margin: 0;
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 62.5%;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  };
+  a{
+    color: inherit; 
+    text-decoration: none;
+  };
+  *{
+    box-sizing: border-box;
+  };
+`;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-  <>
-    <Header />
-    <Component {...pageProps} />
-  </>
-
-)}
-export default MyApp
+    <>
+      <GlobalStyle />
+      <Header />
+      <Component {...pageProps} />
+    </>
+  );
+}
+export default MyApp;
