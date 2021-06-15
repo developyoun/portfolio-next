@@ -4,12 +4,15 @@ import Header from "../components/Header";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+  html{
+    font-size: 62.5%;
+  }
   body{
     padding: 0;
     margin: 0;
     background-color: #1a1a1a;
     color: white;
-    font-size: 62.5%;
+    
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   };

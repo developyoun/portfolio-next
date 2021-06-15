@@ -56,7 +56,7 @@ const Div = styled.div`
   };
   svg{
     padding-left: 2rem;
-    font-size: 3.4rem;
+    font-size: 4.5rem;
     color :rgb(176, 190, 197);
     :hover{
       cursor: pointer;
@@ -76,8 +76,8 @@ const Header = () => {
       <Div>
         <Link href="/">
           <a>
-            <Font fontsize="1.8rem">JaeHo Pyoun</Font>
-            <Font fontsize="0.4rem">byname. developyoun</Font>
+            <Font fontsize="2.4rem">JaeHo Pyoun</Font>
+            <Font fontsize="0.8rem">byname. developyoun</Font>
           </a>
         </Link>
       </Div>
