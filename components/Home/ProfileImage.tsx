@@ -1,3 +1,5 @@
+import { PropsType } from "../../pages/index"
+
 import profileImage from "../../public/images/profile_image.jpg";
 import styled from "styled-components";
 
@@ -7,13 +9,16 @@ const Image = styled.img`
   border-radius: 10%;
 `;
 
-const ProfileImage = () => {
+const ProfileImage = ({flip}: PropsType) => {
   
+  console.log(flip)
   return(
-    <Image 
-      src={profileImage}
-      alt="Profile Image"
-    /> 
+    <button onClick={flip}>
+        <Image
+          src={profileImage}
+          alt="Profile Image"
+        /> 
+    </button>
   )
 }
 export default ProfileImage;

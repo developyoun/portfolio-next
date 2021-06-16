@@ -1,3 +1,5 @@
+import { PropsType } from "../../pages/index"
+
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -21,9 +23,9 @@ const Content = styled.div`
 `;
 
 
-const ProfileIntro = () => {
+const ProfileIntro = ({flip}: PropsType) => {
   return (
-    <Container>
+    <Container onClick={flip}>
       <Title>
         "호기심을 해소하려 노력하는 나는,
         <span> 편재호 </span>
