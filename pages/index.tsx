@@ -24,8 +24,8 @@ const Home = () => {
     <Container>
       <ReactCardFlip 
         isFlipped={isFilp} 
-        containerStyle={{width:"70%", height:"50vw", display:"block", margin:"0 auto"}}
-      >
+        containerStyle={{width:"70%", height:"40vw", display:"block", margin:"0 auto"}}
+        >
         <ProfileImage flip={handleFlip}/>
         <ProfileIntro flip={handleFlip}/>
       </ReactCardFlip>
