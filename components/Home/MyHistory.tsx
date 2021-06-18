@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   font-size: 1.6rem;
-  margin: 4rem;
+  margin: 3rem;
   
 `;
 

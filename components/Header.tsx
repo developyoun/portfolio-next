@@ -81,6 +81,11 @@ const Header = () => {
           </a>
         </Link>
       </Div>
+      
+      <Div><Link href='/techstack'><a>Tech-Stack</a></Link></Div>
+      <Div><Link href='/projects'><a>Projects</a></Link></Div>
+      <Div><Link href='/info'><a>INFO</a></Link></Div>
+    
       <Div>
         <AiOutlineMail />
         <AiOutlinePhone />
