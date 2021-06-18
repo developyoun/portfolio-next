@@ -2,6 +2,7 @@ import ReactCardFlip from 'react-card-flip';
 
 import ProfileImage from "../components/Home/ProfileImage";
 import ProfileIntro from "../components/Home/ProfileIntro";
+import History from "../components/Home/MyHistory"
 
 import styled from "styled-components";
 import { useState } from 'react';
@@ -30,6 +31,7 @@ const Home = () => {
         <ProfileIntro flip={handleFlip}/>
       </ReactCardFlip>
       <ArrowMark />
+      <History />
     </Container>
   )
 };
