@@ -5,8 +5,15 @@ import styled from "styled-components";
 
 const Container = styled.div`
   font-size: 1.6rem;
-  margin: 3rem;
+  margin:2rem 10rem;
+  text-align: center;
   
+  h3{
+    color: #ffcdd2;
+  }
+  h4{
+    color: #e3f2fd;
+  }
 `;
 
 const MyHistory = () => {
