@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
+import { Modal, Backdrop, Fade } from "@material-ui/core";
 import styled, { keyframes } from "styled-components";
-import Modal from "styled-react-modal";
 
 type PropTypes = {
   show: boolean;
@@ -16,41 +16,52 @@ const OpenAnimation = keyframes`
     opacity: 1;
   }
 `;
-const CloseAnimation = keyframes`
-  from{
-    opacity: 0;
-  };
-  to{
-    opacity: 1;
-  }
-`;
 
+// const CustomModal = Modal.styled`
+//   background-color: #212121;
+//   border-radius: 5px;
+//   width: 50vw;
+//   height: 70vh;
+//   animation: ${OpenAnimation} .4s ease-in-out;
+// `;
 
-const CustomModal = Modal.styled`
-  background-color: black;
-  width: 80vw;
-  height: 20rem;
-  opacity: 1;
-  animation: ${OpenAnimation} .4s ease-in-out;
+const CustomModal = styled(Modal)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Container = styled.div`
   color: black;
+  height: 30vh;
 `;
 
 const TechModal = ({ show, showOff }: PropTypes) => {
 
   return (
-    <CustomModal 
-      isOpen={show} 
-      onBackgroundClick={showOff} 
-      onEscapeKeydown={showOff} 
-      allowScroll={true}
+    // <CustomModal 
+    //   isOpen={show} 
+    //   onBackgroundClick={showOff} 
+    //   onEscapeKeydown={showOff} 
+    //   allowScroll
+    // >
+    <CustomModal
+      open={show}
+      onClose={showOff}
+      disableScrollLock
+      BackdropComponent={Backdrop}
+      BackdropProps={{
+        timeout: 500,
+      }}
     >
-      <Container>
-        하이
-      </Container>
+      <Fade in={show}>
+        <div>
+          <h2>Transition modal</h2>
+          <p>react-transition-group animates me.</p>
+        </div>
+        </Fade>
     </CustomModal>
+    // </CustomModal>
   );
 };
 export default React.memo(TechModal);

@@ -1,16 +1,15 @@
 import type { AppProps } from "next/app";
 import Header from "../components/Header";
 
-import styled,{ createGlobalStyle } from "styled-components";
-import { ModalProvider, BaseModalBackground } from "styled-react-modal";
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   html{
+    overflow-y: auto;
     font-size: 62.5%;
-    overflow-y: scroll;
+    padding: 0;
   }
   body{
-    padding: 0;
     margin: 0;
     background-color: #1a1a1a;
     color: white;
@@ -27,19 +26,12 @@ const GlobalStyle = createGlobalStyle`
   };
 `;
 
-const ModalComponent = styled(BaseModalBackground)`
-  left: 0;
-  right: 0;
-`;
-
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <GlobalStyle />
-      <ModalProvider backgroundComponent={ModalComponent}>
-        <Header />
-        <Component {...pageProps} />
-      </ModalProvider>
+      <Header />
+      <Component {...pageProps} />
     </>
   );
 }
