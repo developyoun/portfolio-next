@@ -1,12 +1,12 @@
 import ReactCardFlip from 'react-card-flip';
 
-import ProfileImage from "../components/Home/ProfileImage";
-import ProfileIntro from "../components/Home/ProfileIntro";
-import History from "../components/Home/MyHistory"
+import ProfileImage from "../components/home/ProfileImage";
+import ProfileIntro from "../components/home/ProfileIntro";
+import History from "../components/home/MyHistory"
 
 import styled from "styled-components";
 import { useState } from 'react';
-import ArrowMark from '../components/Home/ArrowMark';
+import ArrowMark from '../components/home/ArrowMark';
 
 const Container = styled.div`
   margin: 2rem;

@@ -34,7 +34,10 @@ const Vibrate = keyframes`
 `;
 
 const Container = styled.div`
-  position: sticky;
+  /* position: sticky; */
+  position: fixed;
+  width: 100%;
+
   top: 0;
   display: flex;
   align-items: center;
@@ -47,18 +50,19 @@ const Container = styled.div`
 const Div = styled.div`
   a {
     text-decoration: none;
-    :link, :visited {
+    :link,
+    :visited {
       animation: ${HoverOutAnimation} 0.5s ease-in alternate forwards;
     }
     :hover {
       animation: ${HoverInAnimation} 0.5s ease-in-out alternate forwards;
     }
-  };
-  svg{
+  }
+  svg {
     padding-left: 2rem;
     font-size: 4.5rem;
-    color :rgb(176, 190, 197);
-    :hover{
+    color: rgb(176, 190, 197);
+    :hover {
       cursor: pointer;
       animation: ${Vibrate} 0.2s linear infinite;
     }
@@ -72,26 +76,40 @@ const Font = styled.div<FontType>`
 
 const Header = () => {
   return (
-    <Container>
-      <Div>
-        <Link href="/">
-          <a>
-            <Font fontsize="2.4rem">JaeHo Pyoun</Font>
-            <Font fontsize="0.8rem">byname. developyoun</Font>
-          </a>
-        </Link>
-      </Div>
-      
-      <Div><Link href='/techstack'><a>Tech-Stack</a></Link></Div>
-      <Div><Link href='/projects'><a>Projects</a></Link></Div>
-      <Div><Link href='/info'><a>INFO</a></Link></Div>
-    
-      <Div>
-        <AiOutlineMail />
-        <AiOutlinePhone />
-        <AiOutlineFacebook />
-      </Div>
-    </Container>
+    <div style={{ height: "50px" }}>
+      <Container>
+        <Div>
+          <Link href="/">
+            <a>
+              <Font fontsize="2.4rem">JaeHo Pyoun</Font>
+              <Font fontsize="0.8rem">byname. developyoun</Font>
+            </a>
+          </Link>
+        </Div>
+
+        <Div>
+          <Link href="/techstack">
+            <a>Tech-Stack</a>
+          </Link>
+        </Div>
+        <Div>
+          <Link href="/projects">
+            <a>Projects</a>
+          </Link>
+        </Div>
+        <Div>
+          <Link href="/info">
+            <a>INFO</a>
+          </Link>
+        </Div>
+
+        <Div>
+          <AiOutlineMail />
+          <AiOutlinePhone />
+          <AiOutlineFacebook />
+        </Div>
+      </Container>
+    </div>
   );
 };
 export default Header;

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@types/styled-components": "^5.1.10",
+    "@types/styled-react-modal": "^1.2.0",
     "next": "10.2.3",
     "next-compose-plugins": "^2.2.1",
     "next-images": "^1.8.1",
@@ -18,7 +19,8 @@
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
     "react-markdown": "^6.0.2",
-    "styled-components": "^5.3.0"
+    "styled-components": "^5.3.0",
+    "styled-react-modal": "^2.1.0"
   },
   "devDependencies": {
     "@types/react": "17.0.11",

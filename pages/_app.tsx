@@ -2,6 +2,7 @@ import type { AppProps } from "next/app";
 import Header from "../components/Header";
 
 import { createGlobalStyle } from "styled-components";
+import { ModalProvider } from "styled-react-modal";
 
 const GlobalStyle = createGlobalStyle`
   html{
@@ -30,8 +31,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <GlobalStyle />
-      <Header />
-      <Component {...pageProps} />
+      <ModalProvider>
+        <Header />
+        <Component {...pageProps} />
+      </ModalProvider>
     </>
   );
 }
