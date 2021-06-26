@@ -1,29 +1,15 @@
 import React from "react";
+import { StackType } from "../../pages/techstack";
 
-import { Modal, Backdrop, Fade } from "@material-ui/core";
-import styled, { keyframes } from "styled-components";
+import { Modal, Backdrop, Fade, LinearProgress } from "@material-ui/core";
+import { Rating } from "@material-ui/lab";
+import styled from "styled-components";
 
 type PropTypes = {
   show: boolean;
+  data: StackType;
   showOff: () => void;
 };
-
-const OpenAnimation = keyframes`
-  from{
-    opacity: 0;
-  };
-  to{
-    opacity: 1;
-  }
-`;
-
-// const CustomModal = Modal.styled`
-//   background-color: #212121;
-//   border-radius: 5px;
-//   width: 50vw;
-//   height: 70vh;
-//   animation: ${OpenAnimation} .4s ease-in-out;
-// `;
 
 const CustomModal = styled(Modal)`
   display: flex;
@@ -31,20 +17,46 @@ const CustomModal = styled(Modal)`
   align-items: center;
 `;
 
-const Container = styled.div`
-  color: black;
-  height: 30vh;
+const Paper = styled.div<{imageUrl?:string}>`
+  outline: none;
+  box-shadow: 10px 10px 10px black;
+  border-radius: 11px;
+  background-image: url(${props => props.imageUrl});
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50vw;
+`;
+const PaperContainer = styled.div`
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  color: #e0e0e0;
+  padding: 3rem;
 `;
 
-const TechModal = ({ show, showOff }: PropTypes) => {
+const ModalHead = styled.div`
+  margin: 1rem;
+  .data__name{
+    font-size: 4rem;
+    font-weight: bolder;
+  };
+  .data__class, .data__rating{
+    font-size: 2rem;
+    margin-top: 0.5rem;
+  };
+`;
+const ModalBody = styled.div`
+  margin: 3rem 1rem;
+  div{
+    margin: 1rem 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+`;
+
+const TechModal = ({ show, showOff, data }: PropTypes) => {
+  console.log(data)
 
   return (
-    // <CustomModal 
-    //   isOpen={show} 
-    //   onBackgroundClick={showOff} 
-    //   onEscapeKeydown={showOff} 
-    //   allowScroll
-    // >
     <CustomModal
       open={show}
       onClose={showOff}
@@ -55,13 +67,27 @@ const TechModal = ({ show, showOff }: PropTypes) => {
       }}
     >
       <Fade in={show}>
-        <div>
-          <h2>Transition modal</h2>
-          <p>react-transition-group animates me.</p>
-        </div>
-        </Fade>
+        <Paper imageUrl={data.imageUrl}>
+          <PaperContainer>
+            <ModalHead>
+              <div className="data__name">{data.name}</div>
+              <div className="data__class">Classification : {data.class}</div>
+              <div className="data__rating"> 
+              Level : <Rating size="large" value={(data.level)/2} precision={0.01} readOnly />
+              </div>
+            </ModalHead>
+            <hr style={{border: "0.1px gray solid" }}/>
+            <ModalBody>
+              {data.content.map(content => {
+                return <div>
+                  - {content}
+                </div>
+              })}
+            </ModalBody>
+          </PaperContainer>
+        </Paper>
+      </Fade>
     </CustomModal>
-    // </CustomModal>
   );
 };
 export default React.memo(TechModal);

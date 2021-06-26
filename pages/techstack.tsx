@@ -5,6 +5,16 @@ import stacks from "../data/techstack.json";
 
 import styled from "styled-components";
 
+export type StackType = {
+  class: string;
+  content: string[];
+  imageUrl: string;
+  level: number;
+  name: string;
+  backgroundColor: string;
+}
+
+
 const Container = styled.div`
   width: 70vw;
   margin: 3rem auto;
@@ -23,15 +33,29 @@ const Image = styled.img`
   box-shadow: 4px 4px 4px #000;
   border-radius: 4px;
 
+  transition: all .5s;
   cursor: pointer;
+  :hover{
+    transform: scale(1.2);
+  }
 `;
 
 const TechStack = () => {
   const [isModal, setIsModal] = useState(false);
+  const [data, setData] = useState<StackType>({
+    class: "",
+    content: [],
+    imageUrl: "",
+    level: 0,
+    name: "",
+    backgroundColor: "",
+  });
 
-  const modalOn = () => setIsModal(true);
+  const modalOn = (stack:StackType) => {
+    setIsModal(true)
+    setData(stack)
+  };
   const modalOff = () => setIsModal(false);
-
 
   return(
     <Container>
@@ -41,12 +65,12 @@ const TechStack = () => {
             <Image 
               src={stack.imageUrl} 
               alt={stack.name}
-              onClick={modalOn}
+              onClick={() => modalOn(stack)}
               />
           </ImageContainer>
         )})
       }
-      <TechModal show={isModal} showOff={modalOff}/>
+      <TechModal show={isModal} showOff={modalOff} data={data}/>
     </Container>
   )
 }
