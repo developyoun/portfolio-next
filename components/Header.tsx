@@ -104,9 +104,9 @@ const Header = () => {
         </Div>
 
         <Div>
-          <AiOutlineMail />
-          <AiOutlinePhone />
-          <AiOutlineFacebook />
+          <a href="mailto:pyoun820@naver.com"><AiOutlineMail /></a>
+          <a href="tel:01065998851"><AiOutlinePhone /></a>
+          <a target="_blank" href="https://www.facebook.com/100003332153341"><AiOutlineFacebook /></a>
         </Div>
       </Container>
     </div>
