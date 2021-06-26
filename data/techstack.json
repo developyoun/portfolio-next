@@ -2,7 +2,7 @@
   {
     "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzPYlsQX7zLqhotXFUjA2fmeJlZeLDY_eGQV7iG5C5iz7Gf5hMSlobNB2XPM6WAm92Frc&usqp=CAU",
     "name": "HTML",
-    "level": 7.2,
+    "level": 8.2,
     "content": ["HTML이 화면에 그려지는 과정을 이해하고 있습니다.", "다양한 태그의 기능과 역할에 대해 이해하고 있으며 사용할 수 있습니다."],
     "class": "language",
     "backgroundColor": "#FFE4E4"
@@ -10,7 +10,7 @@
   {
     "imageUrl": "https://media.vlpt.us/post-images/leejh3224/346b08f0-e5d7-11e9-a7c9-f7e46d949a35/css.png",
     "name": "CSS",
-    "level": 8.2,
+    "level": 8.6,
     "content": [
       "css 선택자에 대해 이해하고 있으며 사용할 줄 압니다.",
       "내부 선언, 외부 선언에 대해 알고 있으며 각 사용법을 적절하게 사용할 수 있습니다.",
@@ -18,11 +18,11 @@
     ],
     "class": "language",
     "backgroundColor": "#FFEEE4"
-  },
+  }, 
   {
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
     "name": "JavaScript",
-    "level": 7.5,
+    "level": 8.8,
     "content": [
       "JavaScript 문법과 다양한 자료형을 이해하고 응용할 수 있습니다.",
       "알고리즘 문제를 직면했을 때 JavaScript언어를 통해 해결할 수 있습니다.",
@@ -34,7 +34,7 @@
   {
     "imageUrl": "https://blog.kakaocdn.net/dn/VDf5J/btqEJC72Mlp/5syKtfRxRDv5y6YudWHOP1/img.png",
     "name": "Python",
-    "level": 7.5,
+    "level": 8.2,
     "content": [
       "Python의 문법과 다양한 자료형을 이해하고 응용할 수 있습니다.",
       "현재에도 꾸준히 Python 언어를 주축으로 알고리즘 문제를 해결해 나가고 있습니다.",
@@ -46,7 +46,7 @@
   {
     "imageUrl": "https://blog.kakaocdn.net/dn/biKNJw/btqTxCUb6ca/xbNSAbdHDIWgCWyyIqTyF0/img.png",
     "name": "React",
-    "level": 8.5,
+    "level": 9,
     "content": [
       "함수형 Component인 React Hooks를 사용하여 컴포넌트 설계 및 구현을 해본 경험이 있습니다.",
       "React의 JavaScript(TypeScript) 및 JSX(TSX) 문법을 이해하고 구현할 수 있습니다.",
@@ -58,7 +58,7 @@
   {
     "imageUrl": "https://images.ctfassets.net/23aumh6u8s0i/6ubUHRD1qfolOVHxiBfjZ7/4e704f48dc5b0104d0c380fec1fe9b9e/django",
     "name": "Django",
-    "level": 5,
+    "level": 6.6,
     "content": ["API 설계와 구축을 하여 프로젝트를 진행한 경험이 있습니다.", "Model 구축하여 데이터를 관리한 경험이 있습니다.", "로직을 세워 데이터를 추출 및 조작한 경험이 있습니다."],
     "class": "framework",
     "backgroundColor": "#EFFFFA"
@@ -66,7 +66,7 @@
   {
     "imageUrl": "https://media.vlpt.us/images/kimkyeseung/post/991011d4-45fc-44b4-8422-4b89c06e4a36/git.png",
     "name": "Git (hub & lab)",
-    "level": 7.7,
+    "level": 8.2,
     "content": [
       "협엽과정에서 프로젝트를 관리 및 병합하는 과정을 거치는 경험을 수행했습니다.",
       "다양한 명령어의 개념을 이해하고 사용한 경험을 가졌습니다.",
@@ -78,7 +78,7 @@
   {
     "imageUrl": "https://media.vlpt.us/images/sonofhuman20/post/7c171f4f-2b5c-45b8-928c-21ba4618c769/redux.png",
     "name": "redux",
-    "level": 6.8,
+    "level": 7.8,
     "content": ["직접 전역적으로 사용되는 상태관리를 경험해 보았습니다.", "비동기 요청을 위한 redux-saga와의 조합을 이용해 보았습니다.", "flux 패턴에 대해 이해하고 있습니다."],
     "class": "library",
     "backgroundColor": "#EFF7FF"
@@ -86,7 +86,7 @@
   {
     "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTezz8JIOchsqWieUieqgkJTmlEng10wXitgWAV3q3FcHTTN7rHtWHHQUwKAC8tXRmV18&usqp=CAU",
     "name": "Styled-Component",
-    "level": 7,
+    "level": 8.4,
     "content": [
       "CSS in JS라는 컨셉을 통해 JavaScript 내부에서 CSS를 적용해보았습니다.",
       "Props를 통해 동적인 style을 적용했습니다.",
@@ -98,7 +98,7 @@
   {
     "imageUrl": "https://mediagotosa.com/content/images/2020/10/axios-1.png",
     "name": "Axios",
-    "level": 7.5,
+    "level": 8.2,
     "content": ["REST 통신을 위한 데이터의 요청과 응답을 수행할 수 있습니다.", "http method, body, header를 정의할 수 있습니다", "Promise의 개념과 의미를 이해하고 있습니다."],
     "class": "library",
     "backgroundColor": "#F5EFFF"
@@ -106,7 +106,7 @@
   {
     "imageUrl": "https://media.vlpt.us/images/soulee__/post/4e636f98-f72f-41ca-9685-5c680370f634/img.jpg",
     "name": "TypeScript",
-    "level": 6,
+    "level": 7.4,
     "content": ["타입 선언법을 사용할 줄 알고 있습니다.", "Javascript와 큰 차이가 느껴지지 않아 편리하게 사용할 수 있는 것 같습니다."],
     "class": "programming language",
     "backgroundColor": "#FCEFFF"

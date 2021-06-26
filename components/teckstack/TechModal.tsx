@@ -54,7 +54,6 @@ const ModalBody = styled.div`
 `;
 
 const TechModal = ({ show, showOff, data }: PropTypes) => {
-  console.log(data)
 
   return (
     <CustomModal
@@ -73,13 +72,13 @@ const TechModal = ({ show, showOff, data }: PropTypes) => {
               <div className="data__name">{data.name}</div>
               <div className="data__class">Classification : {data.class}</div>
               <div className="data__rating"> 
-              Level : <Rating size="large" value={(data.level)/2} precision={0.01} readOnly />
+              Level : <Rating size="large" value={(data.level)/2} precision={0.1} readOnly />
               </div>
             </ModalHead>
             <hr style={{border: "0.1px gray solid" }}/>
             <ModalBody>
-              {data.content.map(content => {
-                return <div>
+              {data.content.map((content, idx) => {
+                return <div key={idx}>
                   - {content}
                 </div>
               })}

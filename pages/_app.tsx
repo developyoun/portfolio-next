@@ -5,7 +5,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   html{
-    overflow-y: auto;
+    overflow-y: scroll;
     font-size: 62.5%;
     padding: 0;
   }
