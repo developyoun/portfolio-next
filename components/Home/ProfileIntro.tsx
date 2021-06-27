@@ -7,10 +7,11 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  
   padding: 2rem;
   margin: 0 auto;
-  height: 100%;
+  width: 413px;
+  height: 531px;
   border-radius: 10px;
   box-shadow: 3px 3px 3px 3px #000;
   cursor: pointer;
