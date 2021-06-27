@@ -1,4 +1,5 @@
 import type { AppProps } from "next/app";
+import { useRouter } from "next/router";
 import Header from "../components/Header";
 
 import { createGlobalStyle } from "styled-components";
@@ -27,6 +28,8 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+
   return (
     <>
       <GlobalStyle />
