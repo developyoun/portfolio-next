@@ -7,19 +7,17 @@ import styled from "styled-components";
 
 const Container = styled.div`
   margin: 3rem;
-
   font-size: 2rem;
 `;
 
 const MovieApp = () => {
-
   return (
-  <>
-    <SubHeader/>
-    <Container>
-      <ReactMarkdown children={MovieAppMarkdown} rehypePlugins={[rehypeRaw]} />
-    </Container>
-  </>
+    <>
+      <SubHeader/>
+      <Container>
+        <ReactMarkdown children={MovieAppMarkdown} rehypePlugins={[rehypeRaw]} />
+      </Container>
+    </>
   )
 }
 export default MovieApp;

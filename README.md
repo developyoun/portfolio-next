@@ -17,8 +17,8 @@
 ├── pages		# route 파일을 관리하는 폴더 (required)
 ├── public		# 리소스 파일을 관리하는 폴더
 ├── types		# 타입스크립트에서 인식하지 못하는 타입을 정의하는 폴더
-├── tsconfig.json		# 타입스크립트 설정
-├── next.config.js		# next의 플러그인 및 웹팩 설정
+├── tsconfig.json	# 타입스크립트 설정
+├── next.config.js	# next의 플러그인 및 웹팩 설정
 ├── .babelrc		# next 바벨 설정 
 │	├── common	# 재사용하기 위한 components 및 function
 │	├── header	# navigation 및 search bar

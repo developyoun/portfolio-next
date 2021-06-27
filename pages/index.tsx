@@ -2,7 +2,7 @@ import ReactCardFlip from 'react-card-flip';
 
 import ProfileImage from "../components/home/ProfileImage";
 import ProfileIntro from "../components/home/ProfileIntro";
-import History from "../components/home/MyHistory"
+
 
 import styled from "styled-components";
 import { useState } from 'react';
@@ -17,7 +17,6 @@ export type PropsType = {
 }
 
 const Home = () => {
-
   const [isFilp, setIsFlip] = useState(false);
   const handleFlip = () => setIsFlip(!isFilp)
 
@@ -31,7 +30,7 @@ const Home = () => {
         <ProfileIntro flip={handleFlip}/>
       </ReactCardFlip>
       <ArrowMark />
-      <History />
+      
     </Container>
   )
 };

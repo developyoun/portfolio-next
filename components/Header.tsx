@@ -99,7 +99,7 @@ const Header = () => {
         </Div>
         <Div>
           <Link href="/study">
-            <a>STUDY</a>
+            <a>History</a>
           </Link>
         </Div>
 

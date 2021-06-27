@@ -1,20 +1,26 @@
 import ReactMarkdown from "react-markdown";
 
-import StudyMarkdown from "../markdown/study.md"
+import HistoryMarkDown from "../markdown/history.md";
 
 import styled from "styled-components";
 
 const Container = styled.div`
+  font-size: 1.6rem;
+  margin:5rem 10rem;
   text-align: center;
-  margin: 2rem;
-
-  font-size: 2.2rem;
+  
+  h3{
+    color: #ffcdd2;
+  }
+  h4{
+    color: #e3f2fd;
+  }
 `;
 
 const Study = () => {
   return(
     <Container>
-      <ReactMarkdown children={StudyMarkdown} />
+      <ReactMarkdown children={HistoryMarkDown}/>
     </Container>
   )
 }
