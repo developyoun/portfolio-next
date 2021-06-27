@@ -8,7 +8,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   margin: 3rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 `;
 
 const Bookstore = () => {

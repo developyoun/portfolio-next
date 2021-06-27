@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   margin: 3rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
 `;
 
 const MovieApp = () => {
