@@ -9,4 +9,5 @@ module.exports = withPlugins([withImages], {
     });
     return config;
   },
+  webpack5: true,
 });
