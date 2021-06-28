@@ -1,6 +1,6 @@
 import { PropsType } from "../../pages/index";
 
-import profileImage from "../../public/images/profile_image.jpg";
+import profileImageFile from "../../public/images/profile_image.jpg";
 import styled from "styled-components";
 
 const Image = styled.img`
@@ -16,7 +16,7 @@ const Image = styled.img`
 const ProfileImage = ({ flip }: PropsType) => {
   return(
     <Image 
-      src={profileImage} 
+      src={profileImageFile} 
       alt="Profile Image" 
       onClick={flip} 
     />

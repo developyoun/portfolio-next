@@ -3,7 +3,6 @@ import ReactCardFlip from 'react-card-flip';
 import ProfileImage from "../components/home/ProfileImage";
 import ProfileIntro from "../components/home/ProfileIntro";
 
-
 import styled from "styled-components";
 import { useState } from 'react';
 import ArrowMark from '../components/home/ArrowMark';
@@ -24,8 +23,7 @@ const Home = () => {
     <Container>
       <div>
         <ReactCardFlip 
-          isFlipped={isFilp} 
-          // containerStyle={{width:"70%", height:"40vw", display:"block", margin:"0 auto"}}
+          isFlipped={isFilp}
           >
           <ProfileImage flip={handleFlip}/>
           <ProfileIntro flip={handleFlip}/>
