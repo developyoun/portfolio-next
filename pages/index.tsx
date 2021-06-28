@@ -1,7 +1,7 @@
 import ReactCardFlip from "react-card-flip";
+import ProfileIntro from "../components/home/ProfileIntro";
 
 import ProfileImage from "../components/home/ProfileImage";
-import ProfileIntro from "../components/home/ProfileIntro";
 
 import styled from "styled-components";
 import { useState } from "react";
