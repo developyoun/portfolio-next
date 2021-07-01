@@ -4,7 +4,7 @@ import styled, { keyframes } from "styled-components";
 import { AiOutlineMail, AiOutlinePhone, AiOutlineFacebook } from "react-icons/ai";
 
 type FontType = {
-fontsize?: string;
+  fontsize?: string;
 };
 
 const HoverInAnimation = keyframes`
@@ -36,7 +36,6 @@ const Vibrate = keyframes`
 const Container = styled.div`
   position: fixed;
   width: 100%;
-
   top: 0;
   display: flex;
   align-items: center;
@@ -86,7 +85,6 @@ const Header = () => {
             </a>
           </Link>
         </Div>
-
         <Div>
           <Link href="/techstack">
             <a>Tech-Stack</a>
