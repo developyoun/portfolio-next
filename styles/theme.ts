@@ -1,13 +1,24 @@
 const size = {
-  mobile: "767px",
-  tablet: "1023px",
-  laptop: "1278px",
+  mobile: {
+    max: "767px",
+  },
+  tablet: {
+    min: "768px",
+    max: "1023px"
+  },
+  laptop: {
+    min: "1024px",
+    max: "1279px"
+  },
+  desktop: {
+    min: "1280px",
+  }
 };
 
 const theme = {
-  mobile: `(max-width: ${size.mobile})`,
-  tablet: `(min-width: ${size.mobile+1}) and (max-width: ${size.tablet})`,
-  laptop: `(min-width: ${size.tablet+1}) and (max-width: ${size.laptop})`,
-  desktop: `(min-width: ${size.laptop+1})`
+  mobile: `(max-width: ${size.mobile.max})`,
+  tablet: `(min-width: ${size.tablet.min}) and (max-width: ${size.tablet.max})`,
+  laptop: `(min-width: ${size.tablet.min}) and (max-width: ${size.laptop.max})`,
+  desktop: `(min-width: ${size.desktop.min})`
 }
 export default theme;
